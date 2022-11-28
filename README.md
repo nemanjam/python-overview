@@ -127,18 +127,68 @@ _while else, for else clauses_ - no-break exit from a loop, _try else clause_ - 
 
 _bitwise operators_ - and, or, xor, not, left and right shift, _bin() and to_bytes()_ - convert integers to bits and bytes, _bytes type_ - immutable sequence of bytes, _bytearray type_ - mutable sequence of bytes, _reading C structures_, _memoryview, memory mapped files_ - copy free working with binary data, C buffer protocol,
 
+##### Only short explanations bellow.
+
 #### Object Internals and Custom Attributes
+
+_object internal representation as dictionary_ - attributes in obj.__dict__, methods in obj.__class__.__dict__, 
 
 #### Descriptors
 
+_descriptors_ - property objects that implement descriptor protocol, getter and setter equivalent,
+
 #### Instance Creation
+
+_instance allocation and initialization_
 
 #### Metaclasses
 
+_metaclasses_ - convert class definition into a class object, customization of class creation, type of a class object, 
+
 #### Class Decorators
+
+_class decorators_ - simpler and less powerful metaclasses alternative, 
 
 #### Abstract Base Classes
 
+_abstract base classes_ - customizable with metamethods, _abc module_ - tools for ABCs, _@abstractmethod_ - prevent instantiation of incomplete subclasses, 
+
+
+---
+
+### Managing Python Packages and Virtual Environments
+
+#### Managing Python Packages with pip
+
+_pip_ - manage packages,
+
+#### Setting up Your Project with Virtual Environments
+
+_virtualenv, venv_ - isolated, per project dependencies and runtime, 
+
+#### Using virtualenvwrapper to Make Your Life Easier
+
+utility tool
+
+#### Choosing the Right Tools
+
+_pipenv, poetry_ - deterministic dependency management, 
+
+---
+
+### Python Best Practices for Code Quality
+
+#### Following Python Style Guidelines: PEP8 and Pylint
+
+_pylint, black_ - PEP8 formatting and linting,
+
+#### Documenting Your Project
+
+_docstrigns_, _sphinx_ - .rst to html converter, _apidoc_ - docstrings to html, 
+
+#### Improve Your Code with Type Checking
+
+_type hints_ - optional type information, _mypy_ - static type checking, 
 
 
 
