@@ -37,7 +37,7 @@ _str_ - immutable string type and literals, _bytes_ - binary type, encoding and 
 
 #### Modularity
 
-_modules_ - .py files, _ __name__ attribute _ - detect if file is imported or executed in shell, _python execution model_ - function name is bound to definition at runtime, _sys.argv[...]_ - passing command line arguments, _main()_ - custom entry point for a python script, _shebang_ - run python file as shell script, _docstrings_ - singleline and multiline, 
+_modules_ - .py files, _\_\_name\_\_ attribute_ - detect if file is imported or executed in shell, _python execution model_ - function name is bound to definition at runtime, _sys.argv[...]_ - passing command line arguments, _main()_ - custom entry point for a python script, _shebang_ - run python file as shell script, _docstrings_ - singleline and multiline, 
 
 #### Objects and Types
 
@@ -57,7 +57,7 @@ _comprehensions_ - concise syntax to transform collections without side effects 
 
 #### Classes
 
-_classes_ - custom types, classes are callable objects in Python, name bound to definition once at runtime, PascalCase naming, no new keyword, _self_ - equivalent to this in Java, simply assign class attributes without declaration, _ __init__() _ - initializer, not a constructor, for configuring already created object, _methods_ - first argument is self and passed explicitly, _no access modifiers_ - everything is public, underscore for private attributes, _invariants_ - constraints, validate attributes, _duck typing_ - argument fitness determined at runtime, not by inheritance hierarchy at compile time, _late binding_ - use object to resolve method calling at runtime, _polymorphism_ - through late binding, not through inheritance, _inheritance_ - used only for reusing implementation, 
+_classes_ - custom types, classes are callable objects in Python, name bound to definition once at runtime, PascalCase naming, no new keyword, _self_ - equivalent to this in Java, simply assign class attributes without declaration, _\_\_init\_\_()_ - initializer, not a constructor, for configuring already created object, _methods_ - first argument is self and passed explicitly, _no access modifiers_ - everything is public, underscore for private attributes, _invariants_ - constraints, validate attributes, _duck typing_ - argument fitness determined at runtime, not by inheritance hierarchy at compile time, _late binding_ - use object to resolve method calling at runtime, _polymorphism_ - through late binding, not through inheritance, _inheritance_ - used only for reusing implementation, 
 
 #### File IO and Resource Managements
 
@@ -69,15 +69,15 @@ _files and file like objects_ - text and binary mode, support iterator and conte
 
 #### Organizing Larger Programs
 
-_packages_ - folders, _modules_ - files, _sys.path_ - list of all included directories with modules, _PYTHONPATH_ - OS level environment variable that is included in sys.path, _ __init__.py_ - index file that creates  a package from a folder, _subpackages_ - package can have hierarchy, _relative imports_ - from import syntax with a dot, _ __all__ _ - export only some variables from a module, _namespace packages_ - package composed from a few sibling folders, _ __main__.py_ - create executable directories, _recommended layout_ - recommended folder structure with source, test, index and setup files, _module singletons_ - variables defined in modules are singletons, 
+_packages_ - folders, _modules_ - files, _sys.path_ - list of all included directories with modules, _PYTHONPATH_ - OS level environment variable that is included in sys.path, _\_\_init\_\_.py_ - index file that creates  a package from a folder, _subpackages_ - package can have hierarchy, _relative imports_ - from import syntax with a dot, _\_\_all\_\__ - export only some variables from a module, _namespace packages_ - package composed from a few sibling folders, _\_\_main\_\_.py_ - create executable directories, _recommended layout_ - recommended folder structure with source, test, index and setup files, _module singletons_ - variables defined in modules are singletons, 
 
 #### Beyond Basic Functions
 
-_positional and keyword arguments_ - determined in the function call, _default arguments_ - evaluated only once at import time, must not be mutable value, _callable instances_ - their class has __call__() method defined, used as stateful functions, _callables_ - functions, classes, callable objects, lambdas, _conditional expressions_ - ternary expression equivalent, _lambdas_ - single expression anonymous functions, _extended formal and actual arguments syntax_ - def fn(*args, **kwargs), fn(*args), fn(**args) - equivalent to rest and spread syntax in JavaScript, unpacking - destructuring, _global functions_ - definition bound to name at runtime (import time), _local functions_ - redefined on each parent function call, _LEGB scopes_ - local, enclosing, global (module), built in, _function are first class citizens_ - can be passed, returned, assigned, _closures_ - maintain references from parent scopes, prevent garbage collection,
+_positional and keyword arguments_ - determined in the function call, _default arguments_ - evaluated only once at import time, must not be mutable value, _callable instances_ - their class has \_\_call\_\_() method defined, used as stateful functions, _callables_ - functions, classes, callable objects, lambdas, _conditional expressions_ - ternary expression equivalent, _lambdas_ - single expression anonymous functions, _extended formal and actual arguments syntax_ - def fn(*args, \*\*kwargs), fn(\*args), fn(\*\*args) - equivalent to rest and spread syntax in JavaScript, unpacking - destructuring, _global functions_ - definition bound to name at runtime (import time), _local functions_ - redefined on each parent function call, _LEGB scopes_ - local, enclosing, global (module), built in, _function are first class citizens_ - can be passed, returned, assigned, _closures_ - maintain references from parent scopes, prevent garbage collection,
 
 #### Closures and Decorators
 
-_ __closure__ _ - reference to the closure variables, _function factories_ - functions that returns new specialized functions, _nonlocal and global keywords_ - reuse variables frm parent and global scope, _decorators_ - syntactic sugar for higher oder functions, accepts callable and returns callable, can be nested, _@functools.wraps()_ - helper decorator for forwarding metadata of the decorated function, _instance attributes_ - per instance, 
+_\_\_closure\_\__ - reference to the closure variables, _function factories_ - functions that returns new specialized functions, _nonlocal and global keywords_ - reuse variables frm parent and global scope, _decorators_ - syntactic sugar for higher oder functions, accepts callable and returns callable, can be nested, _@functools.wraps()_ - helper decorator for forwarding metadata of the decorated function, _instance attributes_ - per instance, 
 
 #### Properties and Class Methods
 
@@ -85,7 +85,7 @@ _class attributes_ - per class, same for all instances, _@staticmethod_ - does n
 
 #### Strings and Representations
 
-_str()_ - simple string representation, calls __str__(), meant for users, called on print(), _repr()_ - verbose string representation, calls __repr__(), required, meant for developers, _format()_ - calls __format__(), optional, _ascii(), ord(), chr()_ - helpers for escaping and translating ascii to unicode strings, 
+_str()_ - simple string representation, calls \_\_str\_\_(), meant for users, called on print(), _repr()_ - verbose string representation, calls \_\_repr\_\_(), required, meant for developers, _format()_ - calls \_\_format\_\_(), optional, _ascii(), ord(), chr()_ - helpers for escaping and translating ascii to unicode strings, 
 
 #### Numeric and Scalar Types
 
@@ -93,11 +93,11 @@ _int_ - unlimited precision signed integer, _float_ - 64 bits floating point, _D
 
 #### Iterables and Iteration
 
-_advanced comprehensions_ - multiple input sequences - nested loops, if clauses, in the result expression of a comprehension - multidimensional result, _map()_ - returns iterable, lazy, _filter()_ - accepts predicate, returns iterable, lazy, _reduce()_ - summation generalization, _iter(iterable)_ - requires __iter__(), iterable protocol, _next(iterator)_ - requires __next__() and __iter__(), iterator protocol, _ __getitem__()__ - iterable protocol for subsequent indexes, _iter(callable, sentinel)_ - extended iter format, 
+_advanced comprehensions_ - multiple input sequences - nested loops, if clauses, in the result expression of a comprehension - multidimensional result, _map()_ - returns iterable, lazy, _filter()_ - accepts predicate, returns iterable, lazy, _reduce()_ - summation generalization, _iter(iterable)_ - requires \_\_iter\_\_(), iterable protocol, _next(iterator)_ - requires \_\_next\_\_() and \_\_iter\_\_(), iterator protocol, _\_\_getitem\_\_()_ - iterable protocol for subsequent indexes, _iter(callable, sentinel)_ - extended iter format, 
 
 #### Inheritance and Subtype Polymorphism
 
-_single inheritance_, _multiple inheritance_, _isinstance() and issubclass()_ - helper methods, _method resolution order - MRO_ - search order of inheritance graph, Class.__mro__ and mro(), calculated by C3 algorithm, which base class method will be called, _super()_ - returns bound class or instance proxy object in class or instance methods, returns base class in single inheritance, _inheritance usage_ - not for type hierarchy but for reusing implementation, 
+_single inheritance_, _multiple inheritance_, _isinstance() and issubclass()_ - helper methods, _method resolution order - MRO_ - search order of inheritance graph, Class.\_\_mro\_\_ and mro(), calculated by C3 algorithm, which base class method will be called, _super()_ - returns bound class or instance proxy object in class or instance methods, returns base class in single inheritance, _inheritance usage_ - not for type hierarchy but for reusing implementation, 
 
 #### Implementing Collections
 
@@ -105,11 +105,11 @@ _collection protocols_ - container, sized, iterable, sequence, set, string repre
 
 #### Exceptions and Errors
 
-_standard exception hierarchy_, _custom exceptions_ - should extend from Exception class, _implicit chaining exceptions_ - handling new exceptions in except block, __context__ attribute, _explicit chaining exceptions_ - raise new exceptions from except block, __cause__ attribute, _traceback objects_ - stack trace, print_tb() and format_tb() for printing, _asserts_ - check assumptions, raise AssertionError for False, useful for return values,
+_standard exception hierarchy_, _custom exceptions_ - should extend from Exception class, _implicit chaining exceptions_ - handling new exceptions in except block, \_\_context\_\_ attribute, _explicit chaining exceptions_ - raise new exceptions from except block, \_\_cause\_\_ attribute, _traceback objects_ - stack trace, print_tb() and format_tb() for printing, _asserts_ - check assumptions, raise AssertionError for False, useful for return values,
 
 #### Defining Context Managers
 
-_context manager_ - object used in with statement, used for unmanaged resources, _context manager protocol_ - __enter__(), __exit__() - setup, teardown methods, for creating custom context managers, _@contextlib.contextmanager_ - decorator for creating context managers, _multiple context managers_ - nested, 
+_context manager_ - object used in with statement, used for unmanaged resources, _context manager protocol_ - \_\_enter\_\_(), \_\_exit\_\_() - setup, teardown methods, for creating custom context managers, _@contextlib.contextmanager_ - decorator for creating context managers, _multiple context managers_ - nested, 
 
 #### Introspection
 
@@ -131,7 +131,7 @@ _bitwise operators_ - and, or, xor, not, left and right shift, _bin() and to_byt
 
 #### Object Internals and Custom Attributes
 
-_object internal representation as dictionary_ - attributes in obj.__dict__, methods in obj.__class__.__dict__, 
+_object internal representation as dictionary_ - attributes in obj.\_\_dict\_\_, methods in obj.\_\_class\_\_.\_\_dict\_\_, 
 
 #### Descriptors
 
