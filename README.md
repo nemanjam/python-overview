@@ -73,7 +73,7 @@ _packages_ - folders, _modules_ - files, _sys.path_ - list of all included direc
 
 #### Beyond Basic Functions
 
-_positional and keyword arguments_ - determined in the function call, _default arguments_ - evaluated only once at import time, must not be mutable value, _callable instances_ - their class has \_\_call\_\_() method defined, used as stateful functions, _callables_ - functions, classes, callable objects, lambdas, _conditional expressions_ - ternary expression equivalent, _lambdas_ - single expression anonymous functions, _extended formal and actual arguments syntax_ - def fn(*args, \*\*kwargs), fn(\*args), fn(\*\*args) - equivalent to rest and spread syntax in JavaScript, unpacking - destructuring, _global functions_ - definition bound to name at runtime (import time), _local functions_ - redefined on each parent function call, _LEGB scopes_ - local, enclosing, global (module), built in, _function are first class citizens_ - can be passed, returned, assigned, _closures_ - maintain references from parent scopes, prevent garbage collection,
+_positional and keyword arguments_ - determined in the function call, _default arguments_ - evaluated only once at import time, must not be mutable value, _callable instances_ - their class has \_\_call\_\_() method defined, used as stateful functions, _callables_ - functions, classes, callable objects, lambdas, _conditional expressions_ - ternary expression equivalent, _lambdas_ - single expression anonymous functions, _extended formal and actual arguments syntax_ - def fn(\*args, \*\*kwargs), fn(\*args), fn(\*\*args) - equivalent to rest and spread syntax in JavaScript, unpacking - destructuring, _global functions_ - definition bound to name at runtime (import time), _local functions_ - redefined on each parent function call, _LEGB scopes_ - local, enclosing, global (module), built in, _function are first class citizens_ - can be passed, returned, assigned, _closures_ - maintain references from parent scopes, prevent garbage collection,
 
 #### Closures and Decorators
 
@@ -189,30 +189,4 @@ _docstrigns_, _sphinx_ - .rst to html converter, _apidoc_ - docstrings to html,
 #### Improve Your Code with Type Checking
 
 _type hints_ - optional type information, _mypy_ - static type checking, 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
